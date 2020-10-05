@@ -1,0 +1,25 @@
+{
+  "rootDir": "../",
+  "coverageReporters": [
+    "json",
+    "json-summary",
+    "lcov",
+    "text",
+    "clover"
+  ],
+  "transform": {
+    "^.+\\.[jt]sx?$": [
+      "babel-jest", {
+        "configFile": "./config/babel.config.cjs"
+      }
+    ]
+  },
+  "coverageThreshold": {
+    "global": {
+      "branches": 100,
+      "functions": 100,
+      "lines": 100,
+      "statements": 100
+    }
+  }
+}
